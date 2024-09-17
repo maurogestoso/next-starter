@@ -12,7 +12,7 @@
   "workbench.editor.customLabels.enabled": true,
   "workbench.editor.customLabels.patterns": {
     "**/src/**/page.tsx": "${dirname} - Page",
-    "**/src/**/layout.ts": "${dirname} - Layout",
+    "**/src/**/layout.tsx": "${dirname} - Layout",
     "**/src/**/route.ts": "${dirname} - Route"
   }
 }
