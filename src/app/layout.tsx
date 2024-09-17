@@ -34,7 +34,7 @@ export default function RootLayout({
         >
           <div className="mx-auto max-w-screen-lg px-4">
             <AppNavbar />
-            {children}
+            <main>{children}</main>
           </div>
         </ThemeProvider>
       </body>
