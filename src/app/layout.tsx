@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 
-import { Package2 } from "lucide-react";
-
-import { ModeToggle } from "@/components/mode-toggle";
-import ThemeProvider from "@/components/theme-provider";
+import AppNavbar from "@/components/app-navbar";
+import AppProviders from "@/components/app-providers";
 
 import "./globals.css";
 
@@ -26,30 +23,13 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
+        <AppProviders>
           <div className="mx-auto max-w-screen-lg px-4">
             <AppNavbar />
             <main>{children}</main>
           </div>
-        </ThemeProvider>
+        </AppProviders>
       </body>
     </html>
-  );
-}
-
-function AppNavbar() {
-  return (
-    <nav className="flex items-center justify-between py-4">
-      <Link href="/" className="flex items-center gap-2 font-semibold">
-        <Package2 className="h-6 w-6" />
-        <span className="">Next Starter</span>
-      </Link>
-      <ModeToggle />
-    </nav>
   );
 }
