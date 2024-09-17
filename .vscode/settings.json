@@ -2,6 +2,17 @@
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "always",
-    "source.fixAll.ts": "always"
+    "source.fixAll.ts": "always",
+    "source.organizeImports": "always"
+  },
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "workbench.editor.customLabels.enabled": true,
+  "workbench.editor.customLabels.patterns": {
+    "**/src/**/page.tsx": "${dirname} - Page",
+    "**/src/**/layout.ts": "${dirname} - Layout",
+    "**/src/**/route.ts": "${dirname} - Route"
   }
 }
